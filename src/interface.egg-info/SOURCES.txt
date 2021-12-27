@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/interface.egg-info/PKG-INFO
+src/interface.egg-info/SOURCES.txt
+src/interface.egg-info/dependency_links.txt
+src/interface.egg-info/top_level.txt
+src/interface_fm/__init__.py
+src/interface_fm_calculator/__init__.py
+src/interface_gateway_fm/__init__.py
+src/interface_keymaps/__init__.py
+src/interface_mouse/__init__.py
+src/interface_spreadsheet/__init__.py
+src/interface_udf_builder/__init__.py
+src/interface_view/__init__.py
