@@ -1,8 +1,0 @@
-interface_fm
-interface_fm_calculator
-interface_gateway_fm
-interface_keymaps
-interface_mouse
-interface_spreadsheet
-interface_udf_builder
-interface_view
