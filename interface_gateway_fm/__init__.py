@@ -71,7 +71,7 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def load_file(self, file_name: str):
+    def load_state_from_file(self, file_name: str):
         pass
 
     @abstractmethod
@@ -79,11 +79,11 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def merge_file(self, file_name: str):
+    def merge_state_from_file(self, file_name: str):
         pass
 
     @abstractmethod
-    def load_state(self, memento):
+    def load_state_from_memento(self, memento):
         pass
 
     @property
