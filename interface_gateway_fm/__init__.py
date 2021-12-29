@@ -29,7 +29,7 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def get_resource_pickle_load_by_abs_path(self, abs_path):
+    def get_pickle_from_file_system(self, abs_path):
         pass
 
     @abstractmethod
