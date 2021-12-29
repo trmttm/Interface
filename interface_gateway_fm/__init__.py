@@ -21,7 +21,7 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def get_resource_from_package(self, file_name, package):
+    def get_vba_binary(self):
         pass
 
     @abstractmethod
