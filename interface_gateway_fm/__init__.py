@@ -92,11 +92,6 @@ class GateWayABC(ABC):
 
     @property
     @abstractmethod
-    def entities(self):
-        pass
-
-    @property
-    @abstractmethod
     def pickle_file_names(self) -> list:
         pass
 
