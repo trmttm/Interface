@@ -163,3 +163,11 @@ class GateWayABC(ABC):
     @abstractmethod
     def create_load_config_folder(folder_name, folder_key_word):
         pass
+
+    @abstractmethod
+    def attach_to_notification(self, observer):
+        pass
+
+    @abstractmethod
+    def notify(self, notification: str, type=None):
+        pass
