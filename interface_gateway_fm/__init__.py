@@ -25,10 +25,6 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def get_resource_pickle_load_by_package(self, file_name, package):
-        pass
-
-    @abstractmethod
     def get_pickle_from_file_system(self, abs_path):
         pass
 
