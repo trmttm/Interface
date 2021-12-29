@@ -75,10 +75,6 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def load_macro_file(self, file_name: str):
-        pass
-
-    @abstractmethod
     def merge_macro_file(self, file_name: str):
         pass
 
