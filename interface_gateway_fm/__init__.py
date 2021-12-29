@@ -21,15 +21,11 @@ class GateWayABC(ABC):
         pass
 
     @abstractmethod
-    def get_resource(self, file_name, package):
+    def get_resource_from_package(self, file_name, package):
         pass
 
     @abstractmethod
-    def get_resource_pickle_load_by_package(self, file_name, package):
-        pass
-
-    @abstractmethod
-    def get_resource_pickle_load_by_abs_path(self, abs_path):
+    def get_pickle_from_file_system(self, abs_path):
         pass
 
     @abstractmethod
@@ -96,11 +92,6 @@ class GateWayABC(ABC):
 
     @property
     @abstractmethod
-    def entities(self):
-        pass
-
-    @property
-    @abstractmethod
     def pickle_file_names(self) -> list:
         pass
 
@@ -162,4 +153,12 @@ class GateWayABC(ABC):
     @staticmethod
     @abstractmethod
     def create_load_config_folder(folder_name, folder_key_word):
+        pass
+
+    @abstractmethod
+    def attach_to_notification(self, observer):
+        pass
+
+    @abstractmethod
+    def notify(self, notification: str, type=None):
         pass
