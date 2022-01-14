@@ -12,7 +12,7 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
-    def add_text_box(self, view_model: dict):
+    def add_text_box(self, view_model: list):
         pass
 
     @abstractmethod
