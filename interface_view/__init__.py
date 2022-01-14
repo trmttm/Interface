@@ -16,6 +16,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def add_rectangle(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def remove_text_box(self, view_model: dict):
         pass
 
