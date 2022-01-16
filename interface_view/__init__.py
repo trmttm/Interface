@@ -56,6 +56,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_font_size(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def set_border_width(self, view_model: dict):
         pass
 
