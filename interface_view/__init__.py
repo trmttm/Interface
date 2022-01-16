@@ -48,6 +48,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_border_width(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def add_line(self, view_model: dict):
         pass
 
