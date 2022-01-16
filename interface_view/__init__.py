@@ -20,6 +20,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def add_text(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def remove_text_box(self, view_model: list):
         pass
 
