@@ -24,7 +24,7 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
-    def remove_text_box(self, view_model: list):
+    def remove_shape(self, view_model: list):
         pass
 
     @abstractmethod
