@@ -36,6 +36,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def move_lines(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def add_widgets(self, view_model: Union[list, tuple]):
         pass
 
