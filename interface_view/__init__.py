@@ -68,6 +68,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_line_width(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def set_fill_color(self, view_model: dict):
         pass
 
