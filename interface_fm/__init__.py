@@ -38,6 +38,51 @@ class BoundaryInABC(ABC):
 
     @property
     @abstractmethod
+    def account_width(self):
+        pass
+
+    @property
+    @abstractmethod
+    def account_height(self):
+        pass
+
+    @property
+    @abstractmethod
+    def operator_width(self):
+        pass
+
+    @property
+    @abstractmethod
+    def operator_height(self):
+        pass
+
+    @property
+    @abstractmethod
+    def constant_width(self):
+        pass
+
+    @property
+    @abstractmethod
+    def account_font_size(self):
+        pass
+
+    @property
+    @abstractmethod
+    def operator_font_size(self):
+        pass
+
+    @property
+    @abstractmethod
+    def constant_font_size(self):
+        pass
+
+    @property
+    @abstractmethod
+    def constant_height(self):
+        pass
+
+    @property
+    @abstractmethod
     def recent_project_paths(self) -> tuple:
         pass
 
