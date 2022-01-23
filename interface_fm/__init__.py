@@ -48,6 +48,11 @@ class BoundaryInABC(ABC):
 
     @property
     @abstractmethod
+    def account_font_size(self):
+        pass
+
+    @property
+    @abstractmethod
     def operator_width(self):
         pass
 
@@ -58,17 +63,12 @@ class BoundaryInABC(ABC):
 
     @property
     @abstractmethod
-    def constant_width(self):
-        pass
-
-    @property
-    @abstractmethod
-    def account_font_size(self):
-        pass
-
-    @property
-    @abstractmethod
     def operator_font_size(self):
+        pass
+
+    @property
+    @abstractmethod
+    def constant_width(self):
         pass
 
     @property
@@ -79,6 +79,69 @@ class BoundaryInABC(ABC):
     @property
     @abstractmethod
     def constant_height(self):
+        pass
+
+    @property
+    @abstractmethod
+    def bb_width(self):
+        pass
+
+    @property
+    @abstractmethod
+    def bb_font_size(self):
+        pass
+
+    @property
+    @abstractmethod
+    def bb_height(self):
+        pass
+
+    @abstractmethod
+    def set_account_width(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_account_height(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_account_font_size(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_operator_width(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_operator_height(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_operator_font_size(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_constant_width(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_constant_height(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_constant_font_size(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_bb_width(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_bb_height(self, value: int):
+        pass
+
+    @abstractmethod
+    def set_bb_font_size(self, value: int):
         pass
 
     @property
