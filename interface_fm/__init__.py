@@ -19,6 +19,11 @@ class BoundaryInABC(ABC):
     def project_folder(self):
         pass
 
+    @property
+    @abstractmethod
+    def clean_state_prior_to_save(self) -> bool:
+        pass
+
     @abstractmethod
     def clear_project_history(self):
         pass
