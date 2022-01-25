@@ -36,6 +36,10 @@ class BoundaryInABC(ABC):
     def tear_down(self):
         pass
 
+    @abstractmethod
+    def tear_down_setup(self):
+        pass
+
     @property
     @abstractmethod
     def account_width(self):
