@@ -365,6 +365,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def add_unit_of_measure(self, shape_id, unit_of_measure: str):
+        pass
+
+    @abstractmethod
     def display_pickle(self, pickle_name: str):
         pass
 
