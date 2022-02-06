@@ -735,6 +735,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def show_specified_input(self, input_id):
+        pass
+
+    @abstractmethod
     def update_input_entry(self):
         pass
 
