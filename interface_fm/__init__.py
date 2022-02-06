@@ -608,6 +608,10 @@ class BoundaryInABC(ABC):
         pass
 
     @property
+    def input_names(self) -> tuple:
+        pass
+
+    @property
     @abstractmethod
     def output_worksheet_information(self):
         pass
