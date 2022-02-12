@@ -590,6 +590,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def change_sheet_order(self, indexes: tuple, shift: int):
+        pass
+
+    @abstractmethod
     def copy_accounts(self):
         pass
 
