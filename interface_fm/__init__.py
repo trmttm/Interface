@@ -594,7 +594,7 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
-    def add_worksheet_parent_child_relationships(self, parent_sheet_name: str, child_sheet_names: Iterable):
+    def add_worksheet_parent_child_relationships(self, above_sheet_names: Iterable, child_sheet_names: Iterable):
         pass
 
     @abstractmethod
