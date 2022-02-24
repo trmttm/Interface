@@ -56,6 +56,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_text_value(self, view_model: dict):
+        pass
+
+    @abstractmethod
     def set_text_color(self, view_model: dict):
         pass
 
