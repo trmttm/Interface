@@ -36,10 +36,6 @@ class MouseControllerABC(ABC):
     def _save_mouse_position(self, request: dict):
         pass
 
-    @abstractmethod
-    def _save_clicked_position(self, request: dict):
-        pass
-
     @staticmethod
     @abstractmethod
     def is_left_click(request: dict) -> bool:
