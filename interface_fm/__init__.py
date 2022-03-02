@@ -802,6 +802,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def scale_canvas(self, x_times, y_times):
+        pass
+
+    @abstractmethod
     def present_insert_worksheet_in_input_sheet_mode(self):
         pass
 
