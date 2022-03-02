@@ -210,10 +210,6 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
-    def scale_canvas(self, view_model):
-        pass
-
-    @abstractmethod
     def get_canvas_width(self) -> float:
         pass
 
