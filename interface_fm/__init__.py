@@ -549,6 +549,11 @@ class BoundaryInABC(ABC):
     def present_state(self):
         pass
 
+    @property
+    @abstractmethod
+    def selected_sheet(self):
+        pass
+
     @abstractmethod
     def add_new_worksheet(self, sheet_name: str = None):
         pass

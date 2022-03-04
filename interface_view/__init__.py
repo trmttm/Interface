@@ -108,6 +108,14 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def widget_exists(self, widget_id) -> bool:
+        pass
+
+    @abstractmethod
+    def remove_widget(self, widget_id):
+        pass
+
+    @abstractmethod
     def get_mouse_canvas_coordinate(self) -> tuple:
         pass
 
