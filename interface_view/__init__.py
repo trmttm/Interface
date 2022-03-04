@@ -119,6 +119,10 @@ class ViewABC(ABC):
     def get_mouse_canvas_coordinate(self) -> tuple:
         pass
 
+    @abstractmethod
+    def update(self):
+        pass
+
     @property
     @abstractmethod
     def focused_widget(self) -> str:

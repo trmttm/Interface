@@ -559,7 +559,7 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
-    def select_worksheet(self, sheet_name: str):
+    def select_worksheet(self, sheet_name: str, update=False):
         pass
 
     @abstractmethod
