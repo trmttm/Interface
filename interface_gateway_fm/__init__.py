@@ -148,6 +148,11 @@ class GateWayABC(ABC):
 
     @staticmethod
     @abstractmethod
+    def path_exists(path) -> bool:
+        pass
+
+    @staticmethod
+    @abstractmethod
     def create_load_config_folder(folder_name, folder_key_word):
         pass
 
