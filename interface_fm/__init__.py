@@ -312,6 +312,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def merge_file_to_selected_sheet(self, file_name: str):
+        pass
+
+    @abstractmethod
     def save_all_to_file(self, file_name: str):
         pass
 
