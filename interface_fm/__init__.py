@@ -690,6 +690,19 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def set_relay_x_to_right(self):
+        pass
+
+    @abstractmethod
+    def set_relay_x_to_right_end(self):
+        pass
+
+    @property
+    @abstractmethod
+    def relay_to_be_placed_at_right_end(self) -> bool:
+        pass
+
+    @abstractmethod
     def turn_on_insert_sheet_names_in_input_sheet(self):
         pass
 
