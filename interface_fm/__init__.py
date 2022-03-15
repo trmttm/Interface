@@ -702,6 +702,19 @@ class BoundaryInABC(ABC):
     def relay_to_be_placed_at_right_end(self) -> bool:
         pass
 
+    @property
+    @abstractmethod
+    def breakdown_accounts(self) -> tuple:
+        pass
+
+    @abstractmethod
+    def add_selection_to_breakdown_accounts(self):
+        pass
+
+    @abstractmethod
+    def remove_selection_from_breakdown_accounts(self):
+        pass
+
     @abstractmethod
     def turn_on_insert_sheet_names_in_input_sheet(self):
         pass
