@@ -1143,6 +1143,11 @@ class BoundaryInABC(ABC):
     def calculate(self):
         pass
 
+    @property
+    @abstractmethod
+    def sheet_name_to_pass_to_presenter(self):
+        pass
+
     @abstractmethod
     def update_canvas(self):
         pass
