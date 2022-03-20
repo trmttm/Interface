@@ -268,6 +268,30 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def bind_tree_left_click(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
+    def bind_tree_right_click(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
+    def bind_tree_middle_click(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
+    def bind_tree_left_click_release(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
+    def bind_tree_right_click_release(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
+    def bind_tree_middle_click_release(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
     def select_folder(self, initialdir=None):
         pass
 
