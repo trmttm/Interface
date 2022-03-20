@@ -966,6 +966,11 @@ class BoundaryInABC(ABC):
     def set_percent(self, shape_ids: Iterable):
         pass
 
+    @property
+    @abstractmethod
+    def macro_commands(self) -> tuple:
+        pass
+
     @abstractmethod
     def remove_format(self, shape_ids: Iterable):
         pass
