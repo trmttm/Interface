@@ -816,6 +816,11 @@ class BoundaryInABC(ABC):
 
     @property
     @abstractmethod
+    def prevent_worksheet_change_by_tree(self) -> bool:
+        pass
+
+    @property
+    @abstractmethod
     def move_shape_increment(self) -> tuple:
         pass
 
