@@ -1122,6 +1122,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def run_macro_fast(self, observer_passed: Callable = None) -> tuple:
+        pass
+
+    @abstractmethod
     def run_macro(self, observer_passed: Callable = None) -> tuple:
         pass
 
