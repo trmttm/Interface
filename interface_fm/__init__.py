@@ -619,6 +619,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def unselect_all(self):
+        pass
+
+    @abstractmethod
     def select_all_in_the_sheet(self):
         pass
 
