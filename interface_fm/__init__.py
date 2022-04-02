@@ -1212,3 +1212,11 @@ class BoundaryInABC(ABC):
     @abstractmethod
     def gateway_out_methods(self) -> tuple:
         pass
+
+    @abstractmethod
+    def export_input_setter_csv(self, file_name: str = None):
+        pass
+
+    @abstractmethod
+    def load_inputs_from_csv(self, file_name: str = None):
+        pass
