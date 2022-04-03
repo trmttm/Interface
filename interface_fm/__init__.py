@@ -1171,6 +1171,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def update_canvas_of_specified_sheet(self):
+        pass
+
+    @abstractmethod
     def create_data_table(self):
         pass
 
