@@ -1171,7 +1171,7 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
-    def update_canvas_of_specified_sheet(self):
+    def update_canvas_of_current_sheet(self):
         pass
 
     @abstractmethod
