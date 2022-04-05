@@ -820,7 +820,7 @@ class BoundaryInABC(ABC):
 
     @property
     @abstractmethod
-    def prevent_worksheet_change_by_tree(self) -> bool:
+    def prevent_user_input_by_tree(self) -> bool:
         pass
 
     @property
