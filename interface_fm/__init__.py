@@ -1137,6 +1137,14 @@ class BoundaryInABC(ABC):
     def run_macro(self, observer_passed: Callable = None) -> tuple:
         pass
 
+    @abstractmethod
+    def turn_off_presenters(self):
+        pass
+
+    @abstractmethod
+    def turn_on_presenters(self):
+        pass
+
     @property
     @abstractmethod
     def cleared_commands(self) -> bool:
