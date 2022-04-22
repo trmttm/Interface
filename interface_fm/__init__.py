@@ -1102,7 +1102,7 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
-    def highlight_commands_containing_text_box_input(self, search_text: str):
+    def highlight_commands_containing_text_box_input(self, search_text: str, select: tuple = ()):
         pass
 
     @abstractmethod
