@@ -1044,6 +1044,10 @@ class BoundaryInABC(ABC):
     def add_command(self, key, args: tuple, kwargs: dict):
         pass
 
+    @abstractmethod
+    def add_command_always(self, key, args: tuple, kwargs: dict):
+        pass
+
     @property
     @abstractmethod
     def commands(self) -> tuple:
