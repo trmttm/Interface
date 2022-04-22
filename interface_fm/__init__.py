@@ -1102,6 +1102,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def highlight_commands_containing_text_box_input(self, search_text: str):
+        pass
+
+    @abstractmethod
     def add_bar_of_selected_accounts(self):
         pass
 
