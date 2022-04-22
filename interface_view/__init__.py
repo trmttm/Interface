@@ -96,6 +96,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_combobox_values(self, widget_id, values: tuple):
+        pass
+
+    @abstractmethod
     def set_values(self, widget_ids: tuple, values: tuple):
         pass
 
@@ -118,7 +122,7 @@ class ViewABC(ABC):
     @abstractmethod
     def clear_frame(self, frame_id):
         pass
-    
+
     @abstractmethod
     def get_mouse_canvas_coordinate(self) -> tuple:
         pass
