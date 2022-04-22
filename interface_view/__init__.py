@@ -173,6 +173,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def get_all_tree_values(self, tree_id=None):
+        pass
+
+    @abstractmethod
     def switch_tree(self, tree_id):
         pass
 
