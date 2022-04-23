@@ -1218,6 +1218,14 @@ class BoundaryInABC(ABC):
     def keyboard_shortcut_handler_silent(self, modifiers: int, key: str):
         pass
 
+    @abstractmethod
+    def save_any_data_as_pickle(self, file_name_abs_path, data):
+        pass
+
+    @abstractmethod
+    def get_pickle_from_file_system(self, abs_path):
+        pass
+
     @property
     @abstractmethod
     def get_all_group_and_names(self) -> tuple:
