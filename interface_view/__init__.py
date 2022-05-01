@@ -320,7 +320,7 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
-    def update_menu_bar(self, menu_bar_model: dict):
+    def update_menu_bar(self, menu_bar_model: dict, toplevel_id=None):
         pass
 
     @abstractmethod
