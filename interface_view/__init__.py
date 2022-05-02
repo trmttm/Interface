@@ -128,6 +128,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_text(self, widget_id, text: str):
+        pass
+
+    @abstractmethod
     def update(self):
         pass
 
