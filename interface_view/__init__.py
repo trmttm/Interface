@@ -316,7 +316,7 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
-    def select_save_file(self, initialdir=None):
+    def select_save_file(self, initialdir=None, initialfile=''):
         pass
 
     @abstractmethod
