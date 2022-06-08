@@ -176,6 +176,11 @@ class ViewABC(ABC):
     def switch_canvas(self, canvas_id):
         pass
 
+    @property
+    @abstractmethod
+    def current_tree(self):
+        pass
+
     @abstractmethod
     def get_all_tree_values(self, tree_id=None):
         pass
@@ -305,6 +310,10 @@ class ViewABC(ABC):
 
     @abstractmethod
     def bind_tree_middle_click_release(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
+    def deselect_tree_items(self, tree_id=None):
         pass
 
     @abstractmethod
