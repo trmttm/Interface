@@ -2,7 +2,6 @@ from abc import ABC
 from abc import abstractmethod
 from typing import Callable
 from typing import Iterable
-from typing import Union
 
 
 class BoundaryInABC(ABC):
@@ -1260,25 +1259,6 @@ class BoundaryInABC(ABC):
 
     @abstractmethod
     def set_heading_color_background(self, color: str):
-        pass
-
-    @abstractmethod
-    def set_heading_color_text(self, color: str):
-        pass
-
-    @property
-    @abstractmethod
-    def text_color_input(self) -> Union[str, None]:
-        pass
-
-    @property
-    @abstractmethod
-    def text_color_domestic_input(self) -> Union[str, None]:
-        pass
-
-    @property
-    @abstractmethod
-    def heading_color_background(self) -> Union[str, None]:
         pass
 
     @abstractmethod
