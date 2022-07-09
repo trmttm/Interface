@@ -2,6 +2,7 @@ from abc import ABC
 from abc import abstractmethod
 from typing import Callable
 from typing import Iterable
+from typing import Union
 
 
 class BoundaryInABC(ABC):
@@ -1247,4 +1248,31 @@ class BoundaryInABC(ABC):
 
     @abstractmethod
     def load_inputs_from_csv(self, file_name: str = None):
+        pass
+
+    @abstractmethod
+    def set_text_color_input(self, color: str):
+        pass
+
+    @abstractmethod
+    def set_text_color_domestic_input(self, color: str):
+        pass
+
+    @abstractmethod
+    def set_heading_color(self, color: str):
+        pass
+
+    @property
+    @abstractmethod
+    def text_color_input(self) -> Union[str, None]:
+        pass
+
+    @property
+    @abstractmethod
+    def text_color_domestic_input(self) -> Union[str, None]:
+        pass
+
+    @property
+    @abstractmethod
+    def heading_color(self) -> Union[str, None]:
         pass
