@@ -1259,7 +1259,11 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
-    def set_heading_color(self, color: str):
+    def set_heading_color_background(self, color: str):
+        pass
+
+    @abstractmethod
+    def set_heading_color_text(self, color: str):
         pass
 
     @property
@@ -1274,5 +1278,9 @@ class BoundaryInABC(ABC):
 
     @property
     @abstractmethod
-    def heading_color(self) -> Union[str, None]:
+    def heading_color_background(self) -> Union[str, None]:
+        pass
+
+    @abstractmethod
+    def present_format_color(self):
         pass

@@ -355,3 +355,7 @@ class ViewABC(ABC):
     @abstractmethod
     def get_paned_window_sash_position(self, paned_window_id) -> int:
         pass
+
+    @abstractmethod
+    def set_foreground_color(self, widget_id, color: str):
+        pass
