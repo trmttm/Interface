@@ -1246,6 +1246,10 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def load_inputs_from_specified_csv(self, file_name: str = None):
+        pass
+
+    @abstractmethod
     def load_inputs_from_csv(self, file_name: str = None):
         pass
 
