@@ -186,6 +186,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def set_tree_headings(self, tree_id: str, headings: Tuple[str, ...]):
+        pass
+
+    @abstractmethod
     def get_all_tree_values(self, tree_id=None):
         pass
 
