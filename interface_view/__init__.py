@@ -321,6 +321,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def bind_tree_enter(self, command: Callable, tree_id=None):
+        pass
+
+    @abstractmethod
     def deselect_tree_items(self, tree_id=None):
         pass
 
