@@ -329,6 +329,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def change_label_text_color(self, label_id, color):
+        pass
+
+    @abstractmethod
     def select_folder(self, initialdir=None):
         pass
 
