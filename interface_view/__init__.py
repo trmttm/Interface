@@ -149,6 +149,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def bind_widget_entry(self, widget_id, command):
+        pass
+
+    @abstractmethod
     def bind_command_to_widget(self, widget_id, command):
         pass
 
