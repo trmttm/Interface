@@ -1041,11 +1041,27 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
-    def add_command(self, key, args: tuple, kwargs: dict):
+    def add_command(self, key, args: tuple, kwargs: dict = None):
         pass
 
     @abstractmethod
-    def add_command_always(self, key, args: tuple, kwargs: dict):
+    def add_command_select_accounts(self):
+        pass
+
+    @abstractmethod
+    def add_command_set_sensitivity_account_by_name(self):
+        pass
+
+    @abstractmethod
+    def add_command_set_sensitivity_delta_by_name(self):
+        pass
+
+    @abstractmethod
+    def replace_command_args(self, args_str: str):
+        pass
+
+    @abstractmethod
+    def add_command_always(self, key, args: tuple, kwargs: dict = None):
         pass
 
     @property
