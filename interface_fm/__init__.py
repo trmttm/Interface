@@ -1049,6 +1049,14 @@ class BoundaryInABC(ABC):
         pass
 
     @abstractmethod
+    def add_command_add_sensitivity_target(self):
+        pass
+
+    @abstractmethod
+    def add_command_add_sensitivity_input(self):
+        pass
+
+    @abstractmethod
     def add_command_set_sensitivity_account_by_name(self):
         pass
 
