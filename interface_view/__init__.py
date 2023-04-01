@@ -375,3 +375,15 @@ class ViewABC(ABC):
     @abstractmethod
     def set_foreground_color(self, widget_id, color: str):
         pass
+
+    @abstractmethod
+    def bind_upon_drag_and_drop_enter(self, widget_id, callback: Callable):
+        pass
+
+    @abstractmethod
+    def bind_upon_drag_and_drop_leave(self, widget_id, callback: Callable):
+        pass
+
+    @abstractmethod
+    def bind_upon_drag_and_drop_drop(self, widget_id, callback: Callable):
+        pass
