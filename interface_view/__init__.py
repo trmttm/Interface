@@ -345,6 +345,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def select_note_book_tab(self, widget_id, tab_id):
+        pass
+
+    @abstractmethod
     def select_save_file(self, initialdir=None, initialfile=''):
         pass
 
