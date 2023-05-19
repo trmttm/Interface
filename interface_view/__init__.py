@@ -345,7 +345,7 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
-    def change_label_font_size(self, label_id, size: int, font_name: str = 'Helvetica bold'):
+    def change_label_font_size(self, label_id, size: int, font_name: str = 'Helvetica bold', overstrike=False):
         pass
 
     @abstractmethod
