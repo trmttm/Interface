@@ -345,6 +345,10 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def change_label_font_size(self, label_id, size: int, font_name: str = 'Helvetica bold'):
+        pass
+
+    @abstractmethod
     def select_folder(self, initialdir=None):
         pass
 
