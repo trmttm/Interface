@@ -153,6 +153,30 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def bind_left_click(self, command: Callable, widget_id):
+        pass
+
+    @abstractmethod
+    def bind_right_click(self, command: Callable, widget_id):
+        pass
+
+    @abstractmethod
+    def bind_middle_click(self, command: Callable, widget_id):
+        pass
+
+    @abstractmethod
+    def bind_left_click_release(self, command: Callable, widget_id):
+        pass
+
+    @abstractmethod
+    def bind_right_click_release(self, command: Callable, widget_id):
+        pass
+
+    @abstractmethod
+    def bind_middle_click_release(self, command: Callable, widget_id):
+        pass
+
+    @abstractmethod
     def bind_command_to_widget(self, widget_id, command):
         pass
 
