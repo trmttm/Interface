@@ -373,6 +373,14 @@ class ViewABC(ABC):
         pass
 
     @abstractmethod
+    def highlight_entry(self, widget_id: str):
+        pass
+
+    @abstractmethod
+    def remove_highlight_entry(self, widget_id: str):
+        pass
+
+    @abstractmethod
     def select_folder(self, initialdir=None):
         pass
 
