@@ -2,6 +2,8 @@ from abc import ABC
 from abc import abstractmethod
 from typing import Callable
 
+import os_identifier
+
 
 class KeyMapABC(ABC):
     press = 'press'
@@ -72,12 +74,22 @@ class KeyMapABC(ABC):
     left = 'Left'
     right = 'Right'
 
-    none = 0
-    shift = 1
-    control = 4
-    command = 8
-    alt_option = 16
-    function = 64
+    if os_identifier.is_mac:
+        none = 0
+        shift = 1
+        control = 4
+        command = 8
+        alt_option = 16
+        function = 64
+    else:
+        none = 8  # for old windows? this was the case for (old private Windows and Windows from Miyota)
+        # none = 0 # this was the case for ITOCHU PC
+        shift = 1
+        control = 4
+        command = 8
+        alt_option = 131072
+        function = 64
+        tk_none_special = 262144
 
     @abstractmethod
     def add_new_keyboard_shortcut(self, key_combo: tuple, command: Callable):
