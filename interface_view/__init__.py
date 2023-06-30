@@ -8,6 +8,10 @@ from typing import Union
 class ViewABC(ABC):
 
     @abstractmethod
+    def change_style(self):
+        pass
+
+    @abstractmethod
     def attach_to_event_upon_closing(self, observer):
         pass
 
